@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>MATHEW ROSWELL — ARCHITECTURAL PORTFOLIO</title>
+<style>
+:root {
+--black: #000000;
+--white: #ffffff;
+--gray: #f2f2f2;
+--border: 2px solid #000000;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background-color: var(--white);
+color: var(--black);
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+line-height: 1.1;
+text-transform: uppercase;
+overflow-x: hidden;
+}
+
+.mono {
+font-family: 'Courier New', Courier, monospace;
+font-size: 0.8rem;
+letter-spacing: -0.02em;
+}
+
+header {
+border-bottom: var(--border);
+padding: 2rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+font-size: clamp(3rem, 10vw, 8rem);
+font-weight: 900;
+letter-spacing: -0.05em;
+line-height: 0.8;
+grid-column: 1 / span 2;
+margin-bottom: 2rem;
+}
+
+.nav-info {
+display: grid;
+grid-template-columns: 1fr 1fr;
+width: 100%;
+grid-column: 1 / span 2;
+}
+
+section {
+border-bottom: var(--border);
+display: grid;
+grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+section {
+grid-template-columns: 1fr 1fr;
+}
+}
+
+.cell {
+padding: 2rem;
+border-right: var(--border);
+}
+
+.cell:last-child {
+border-right: none;
+}
+
+.full-width {
+grid-column: 1 / -1;
+}
+
+h2 {
+font-size: 4rem;
+font-weight: 900;
+margin-bottom: 2rem;
+}
+
+.project-card {
+border: var(--border);
+margin-bottom: 2rem;
+transition: background 0.3s ease;
+}
+
+.project-card:hover {
+background: var(--black);
+color: var(--white);
+}
+
+.project-image {
+height: 300px;
+background: var(--gray);
+border-bottom: var(--border);
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+}
+
+.project-meta {
+padding: 1rem;
+display: flex;
+justify-content: space-between;
+}
+
+.experience-table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.experience-table tr {
+border-bottom: 1px solid var(--black);
+}
+
+.experience-table td {
+padding: 1rem 0;
+}
+
+footer {
+padding: 4rem 2rem;
+background: var(--black);
+color: var(--white);
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.contact-btn {
+display: inline-block;
+background: var(--white);
+color: var(--black);
+padding: 1rem 2rem;
+font-weight: 900;
+text-decoration: none;
+margin-top: 2rem;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>MATHEW<br>ROSWELL</h1>
+<div class='nav-info'>
+<div class='mono'>LOCATION: OTAUTAHI (CHCH)</div>
+<div class='mono'>STATUS: AVAILABLE FOR WORK '26</div>
+</div>
+</header>
+
+<section>
+<div class='cell full-width'>
+<p class='mono'>[INTRO]</p>
+<p style='font-size: 2rem; font-weight: 700; margin-top: 1rem;'>DESIGNER WITH A BACKGROUND IN GRAPHIC AND UI/UX DESIGN. BUILDING STRUCTURED DIGITAL EXPERIENCES.</p>
+</div>
+</section>
+
+<section>
+<div class='cell'>
+<h2>SERVICES</h2>
+<div class='mono'>
+<p>01 ART DIRECTION</p>
+<p>02 DIGITAL DESIGN</p>
+<p>03 BRAND STRATEGY</p>
+<p>04 UI/UX DESIGN</p>
+<p>05 MOTION GRAPHICS</p>
+</div>
+</div>
+<div class='cell'>
+<h2>PROJECTS</h2>
+
+<div class='project-card'>
+<div class='project-image'>FOSTER + FUNNEL</div>
+<div class='project-meta'>
+<span class='mono'>BRAND IDENTITY / ART DIRECTION</span>
+<span class='mono'>2025</span>
+</div>
+</div>
+
+<div class='project-card'>
+<div class='project-image'>RICHMOND TAEKWONDO</div>
+<div class='project-meta'>
+<span class='mono'>WEBSITE REDESIGN / FRAMER</span>
+<span class='mono'>2024</span>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class='cell full-width'>
+<h2>EXPERIENCE</h2>
+<table class='experience-table'>
+<tr>
+<td class='mono'>’25–’26</td>
+<td>STRATEGY CREATIVE</td>
+<td class='mono'>FREELANCE</td>
+</tr>
+<tr>
+<td class='mono'>’24–’25</td>
+<td>VERIZON CONNECT</td>
+<td class='mono'>UI/UX DESIGNER</td>
+</tr>
+<tr>
+<td class='mono'>’19–’24</td>
+<td>HOTHOUSE</td>
+<td class='mono'>INTERMEDIATE DESIGNER</td>
+</tr>
+</table>
+</div>
+</section>
+
+<footer>
+<div>
+<p class='mono'>READY TO BUILD?</p>
+<a href='#' class='contact-btn'>GET IN TOUCH</a>
+</div>
+<div class='mono' style='text-align: right;'>
+ROSWELL.NZ<br>© 2026 ALL RIGHTS RESERVED
+</div>
+</footer>
+
+</body>
+</html>
